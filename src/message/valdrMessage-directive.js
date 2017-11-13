@@ -82,7 +82,8 @@ angular.module('valdr')
             angular.forEach(scope.violations, function (violation) {
               valdrMessage.$translate(valdrMessage.fieldNameKeyGenerator(violation)).then(function (translation) {
                 violation.fieldName = translation;
-              });
+              })
+              .catch(angular.noop);
             });
           }
         };
