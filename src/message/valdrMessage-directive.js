@@ -84,9 +84,9 @@ angular.module('valdr')
                 violation.fieldName = translation;
               })
               .catch(angular.noop);
-          });
-        }
-      };
+            });
+          }
+        };
 
       var createViolation = function(validatorName) {
         var typeName = valdrTypeController.getType(),
